@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #142e7e;
+    margin-left: 0;
+    color: white;
+    padding: 1em;
+}
+
+h2 {
+    color: #142e7e;
+}
+
+.top-hr {
+    color: white;
+    padding: 1.5px;
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+body {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.top-h2,
+.footer,
+h1 {
+    text-align: center;
+}
+
+.submit {
+    background-color: aqua;
+}
