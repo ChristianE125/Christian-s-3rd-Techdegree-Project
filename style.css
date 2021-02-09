@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 h1 {
-    background-color: #142e7e;
+    background-color: #344658;
     margin-left: 0;
     color: white;
     padding: 1em;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-    color: #142e7e;
+    color: #344658;
 }
 
 .top-hr {
@@ -36,10 +36,6 @@ h1 {
     text-align: center;
 }
 
-.submit {
-    background-color: aqua;
-}
-
 .contact-info {
   border: none;
   font-size: 18.6px;
@@ -60,6 +56,7 @@ h1 {
     padding: 15px 30px 15px 30px;
     background-color: #e9e9e9;
     margin-bottom: 30px;
+    width: 100px;
   }
 
 textarea {
@@ -68,9 +65,11 @@ textarea {
     border-radius: 4px;
     height: auto;
     margin: 0;
-    padding: 15px 39px 15px 39px;
+    padding: 15px;
     background-color: #e9e9e9;
     margin-bottom: 30px;
+    width: 250px;
+ 
   }
 
 .newsletters {
@@ -97,7 +96,50 @@ button {
     margin-bottom: 10px;
     cursor: pointer;
   }
+  
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    text-align: right;
+}
 
-  placeholder {
-      text-align: right;
+ @media (min-width: 768px) {
+
+    main {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+
+    textarea#topics {
+        height: 100px;
+        width: 430px;
+    }
+
+    .flex,
+    .flex-zip {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flex label,
+    .flex-zip label {
+        flex-basis: 25%;
+    }
+
+    .flex input,
+    select {
+        flex-basis: 75%;
+    }
+
+    .flex-zip input {
+        flex-basis: 40%;
+    }
+    
+    label {
+        padding-right: 10px;
+    }
+
   }
