@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-    </style>
-        
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+        <title>Project 3 - Christian Espinosa</title>
+    </head>
 
     <body>
 
@@ -24,74 +24,76 @@
         </div>
 
         <hr class="top-hr">
-        <fieldset>
-        <legend><h2>Contact Information</h2></legend>
-        
-        <div class="flex">
-            <label for="name">Full Name</label>
-            <input required type="text" id="name" name="user_name" class="contact-info" placeholder="Required">
-        </div>
-
-        <div class="flex">
-            <label for="email">Email Address</label>
-            <input required type="email" id="email" name="user_email" class="contact-info" placeholder="Required">
-        </div>
-
-        <div class="flex">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone" class="contact-info">
-        </div>
-
-        <div class="flex">
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address" class="contact-info">
-        </div>
-
-        <div class="flex">
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city" class="contact-info">
-        </div>
-
-        <div class="flex" class="state">
-            <label for="state">State</label><br>
-            <select type="text" id="state" name="user_state" class="contact-info">
-                    <option value="disabled selected hidden">Choose State</option>
-                    <optgroup label="California">
-                        <option value="alameda">Alameda</option>
-                        <option value="san-diego">San Diego</option>
-                        <option value="san-francisco">San Francisco</option>
-                        <option value="los-angeles">Los Angeles</option>
-                        <option value="fresno">Fresno</option>
-                    </optgroup>
-                </select>
-        </div>
-
-        <div class="flex-zip">
-            <label for="zip">Zip Code</label> <br>
-            <input type="text" id="zip" name="name_zip" class="contact-div">
-        </div>
-     </fieldset>
-        <hr>
-        <fieldset>
-        <legend><h2>Newsletter</h2></legend>
-
-            <p>Select the newsletters you would like to receive</p>
-            <div class="newsletters">
-                <input type="checkbox" id="html" value="html_news" name="user_news"><label for="html">HTML News</label><br>
-                <input type="checkbox" id="css" value="css_news" name="user_news"><label for="css">CSS News</label><br>
-                <input type="checkbox" id="javascript" value="javascript_news" name="user_news"><label for="javascript">Javascript News</label><br>
-
-                <p>Newsletter format<p>
-                <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format">HTML</label><br>
-                <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain text</label><br>
+        <form>
+            <fieldset>
+            <legend><h2>Contact Information</h2></legend>
+            
+            <div class="flex">
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name="user_name" class="contact-info" placeholder="Required">
             </div>
-            <p>Other topics you'd like to hear about</p>
 
+            <div class="flex">
+                <label for="email">Email Address</label>
+                <input required type="email" id="email" name="user_email" class="contact-info" placeholder="Required">
+            </div>
 
-            <textarea id="topics" name="user_topics"></textarea>
-        
-        <button type="submit" class="submit">Sign Up</button>
+            <div class="flex">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone" class="contact-info">
+            </div>
+
+            <div class="flex">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address" class="contact-info">
+            </div>
+
+            <div class="flex">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city" class="contact-info">
+            </div>
+
+            <div class="flex state">
+                <label for="state">State</label><br>
+                <select id="state" name="user_state" class="contact-info">
+                        <option value="disabled selected hidden">Choose State</option>
+                        <optgroup label="California">
+                            <option value="alameda">Alameda</option>
+                            <option value="san-diego">San Diego</option>
+                            <option value="san-francisco">San Francisco</option>
+                            <option value="los-angeles">Los Angeles</option>
+                            <option value="fresno">Fresno</option>
+                        </optgroup>
+                    </select>
+            </div>
+
+            <div class="flex-zip">
+                <label for="zip">Zip Code</label> <br>
+                <input type="text" id="zip" name="name_zip" class="contact-div">
+            </div>
         </fieldset>
+            <hr>
+            <fieldset>
+            <legend><h2>Newsletter</h2></legend>
+
+                <p>Select the newsletters you would like to receive</p>
+                <div class="newsletters">
+                    <input type="checkbox" id="html" value="html_news" name="user_news"><label for="html">HTML News</label><br>
+                    <input type="checkbox" id="css" value="css_news" name="user_news"><label for="css">CSS News</label><br>
+                    <input type="checkbox" id="javascript" value="javascript_news" name="user_news"><label for="javascript">Javascript News</label><br>
+
+                    <p>Newsletter format<p>
+                    <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format">HTML</label><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain text</label><br>
+                </div>
+                <label for="topics">Other topics you'd like to hear about</label>
+
+
+                <textarea id="topics" name="user_topics"></textarea>
+            
+            <button type="submit" class="submit">Sign Up</button>
+            </fieldset>
+        </form>
 
     </main>
     <footer>
