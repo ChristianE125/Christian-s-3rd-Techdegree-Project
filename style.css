@@ -34,6 +34,13 @@ main {
     margin-right: 20px;
 }
 
+input:focus,
+textarea:focus {
+    color: black;
+    background-color: beige;
+    border-color: bisque;
+}
+
 .top-h2,
 .footer,
 h1 {
